@@ -11,7 +11,19 @@
     },
   });
 
+  var glightbox = GLightbox({
+    selector: ".glightbox",
+  });
+
   var photos = Glightbox({
     selector: "#photos .photo",
+  });
+
+  var comment = new Swiper("#comments .swiper", {
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      type: "bullets",
+    },
   });
 })();
